@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Minecraft', sans-serif; 
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424; 
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); 
+}
+
+h1 {
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #00bcd4; 
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#status-jogo {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #6e1b45; 
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+   
+}
+#voltar{
+    margin-bottom: 30px;
+}
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    border: 2px solid #444; 
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.quadrado:hover {
+    border-color: #00bcd4; 
+    box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+}
+
+.quadrado.tomada {
+    pointer-events: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1c1c1c; 
+    border: 2px solid #00bcd4; 
+    color: #00bcd4; 
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: inherit;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #00bcd4; /* Muda para verde neon ao passar o mouse */
+    color: black; /* Texto escuro no botão */
+    box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+}
+
+button:active {
+    transform: scale(0.95); /* Efeito de pressionar o botão */
+}

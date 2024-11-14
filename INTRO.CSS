@@ -1,0 +1,70 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #161616; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+}
+
+.menu-container {
+    text-align: center;
+    background-color: #1b1b1b; 
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+    border: 4px solid #00bcd4; 
+}
+
+h1 {
+    font-size: 80px; 
+    margin-bottom: 30px;
+    color: #00bcd4; 
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4; 
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+ }
+ .creditos{
+   text-transform: uppercase;
+ }
+.botao {
+    padding: 60px;
+    font-size: 32px; 
+    cursor: pointer;
+    border: none;
+    background-color: rgb(38, 37, 37);
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-family: 'Press Start 2P', sans-serif;
+   
+}
+
+.botao:hover {
+    background-color: #00bcd4; 
+    color: #121212; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.botao:focus {
+    outline: none;
+}
